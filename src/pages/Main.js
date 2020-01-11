@@ -98,7 +98,7 @@ export default class Main extends Component {
                         this.setState({ status: true})
 
                         setTimeout(() => {
-                            this.props.navigation.navigate("Lyric", { lyrics: this.state.lyrics })
+                            this.props.navigation.navigate("Lyric", { lyrics: this.state.lyrics, song: this.state.song })
                         }, 3000)
                     }}
                 ><Text style={styles.searchBtnTxt}>Search</Text></TouchableOpacity>
